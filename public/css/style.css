@@ -1,0 +1,446 @@
+* {
+	font-family: 'Sanchez', serif;
+}
+
+body {
+	background-image: url(https://www.letters-inc.jp/wp-content/themes/g/img/top7@1x.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+}
+
+/* NAVBAR */
+.navbar {
+	background: linear-gradient(90deg, rgb(18, 18, 56) 14%, rgb(19, 19, 109) 77%, rgba(217,217,240,1) 97%);
+	height: 4em;
+	border-bottom:solid white;
+}
+
+.navbar-item {
+	color: white;
+}
+
+.navbar-item svg {
+	margin-right: 5px;
+}
+
+.navbar .navbar-start a{
+	color: white;
+	font-weight: bolder;
+}
+
+.navbar .navbar-start a:hover{
+	background-color: #3273dc;
+}
+/* INDEX SECTION 1 **/
+.container p {
+	color: white;
+}
+
+.avantage {
+	font-size: 1.2em;
+}
+
+.avantage ul li {
+	color: white;
+}
+
+.is-size-5 {
+	background: linear-gradient(90deg, rgb(18, 18, 56) 14%, rgb(19, 19, 109) 77%, rgba(217,217,240,1) 97%);
+	border-radius: 15px;
+	padding: 10px;
+	box-shadow: 15px 15px 3px 2px rgba(0, 0, 255, .2);
+}
+
+.title {
+	font-size: 3rem;
+	text-align: center;
+	color: white;
+	letter-spacing: .20em;
+	text-shadow: 
+		  1px -1px 0 #494949, 
+		  -1px 2px 1px #494949, 
+		  -2px 4px 1px #494949, 
+		  -3px 6px 1px #494949, 
+		  -4px 8px 1px #494949;
+}
+
+/* SECTION 2 */
+.intro {
+	background: rgba(0, 2, 102, 0.767);
+	border: solid black;
+	box-shadow: rgb(189, 189, 189) 5px 5px 1px 2px;
+	border-radius: 15px;
+}
+/* SECTION 3 */
+.notification {
+	background-color: rgba(0, 1, 65, 0.867);
+	color: white;
+	border-radius: 15px;
+	border: solid white;
+}
+
+figure img {
+	width: 450px;
+	height: 250px;
+}
+
+img {
+	border-radius: 10px;
+}
+
+.aboutus {
+	width: 75%;
+	background-color: rgba(0, 2, 112, 0.767);
+	border-radius: 15px;
+	margin-bottom: 20px;
+
+}
+
+.contact{
+	display: flex;
+	justify-content: center;
+}
+
+#contact {
+	border-radius: 15px;
+}
+
+select {
+	margin-top: 7px;
+	margin-bottom: 7px;
+    font-size: .9rem;
+    padding: 2px 5px;
+}
+
+.section {
+	padding: auto;
+	margin: auto;
+}
+
+.content h1 {
+	color: white;
+}
+
+
+.notification .title-article{
+	text-decoration: none;
+	font-size: 2em;
+	border-radius: 15px;
+	padding: 5px;
+	text-align: center;
+
+}
+
+.ajouter , .register, .login {
+	background-color: rgba(0, 1, 65, 0.867);
+	color: white;
+	border-radius: 15px;
+	border: solid white;
+	width: 65%;
+}
+
+.ajouter label, .register label, .login label{
+	color: white;
+}
+
+/* --------------------PAGE CONTACT-------------------*/
+
+#contact {
+	background: linear-gradient(90deg, rgb(18, 18, 56) 14%, rgb(19, 19, 109) 77%, rgba(217,217,240,1) 97%);
+  padding: 25px;
+  margin: 106px 0px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input,
+#contact input,
+#contact input,
+#contact input,
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input:hover,
+#contact input:hover,
+#contact input:hover,
+#contact input:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #3273dc;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button:hover {
+  background: #3273dc;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+  text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER -------------------------------------------*/
+
+
+.footer-distributed{
+	background: linear-gradient(90deg, rgb(18, 18, 56) 14%, rgb(19, 19, 109) 77%, rgba(217,217,240,1) 97%);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 20px 25px 15px;
+	overflow: hidden;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	float: left;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font-size: 40px;
+}
+
+.footer-distributed h3 span{
+	color:  #001941;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 0 0 15px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 17px;
+	font-weight: normal;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 20px;
+	margin: 15px 20px 0 0;
+	color: #ffffff;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 5px;
+	box-sizing: border-box;
+	background-color:  #3273dc;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	resize: none;
+	font: inherit;
+	font-size: 18px;
+	font-weight: normal;
+	color:  #d1d2d2;
+	width: 400px;
+	padding: 15px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #ffffff;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #ffffff;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #ffffff;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #579dc8d0;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 40px;
+	font-weight: bold;
+	float: right;
+}
+
+.footer-distributed form button:hover {
+	background-color: rgb(0, 10, 148);
+}
+
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-distributed{
+		padding: 30px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
+}

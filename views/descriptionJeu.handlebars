@@ -1,0 +1,14 @@
+<section class="section">
+    <div class="container">
+        <h1 class="title">{{jeu.name}}</h1>
+            <p>Genre: {{jeu.genre}}</p>
+            <img src="{{jeu.image}}" alt="">
+            <p>Description: {{jeu.description}}</p>
+            <p>Author: {{jeu.author}}</p>
+            {{#if user}}
+        <div>
+            <a href="/edit/{{jeu._id}}"><button class="button is-link">Edit</button></a>
+        </div>
+        {{/if}}
+    </div>
+</section>

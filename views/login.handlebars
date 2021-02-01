@@ -1,0 +1,36 @@
+<section class="section login">
+    <div class="container is-fullhd">
+        <form action="/user/loginPost" method="POST" enctype="multipart/form-data">
+            <div class="field">
+                <label class="label">Pseudo :</label>
+                <div class="control has-icons-left has-icons-right">
+                        <input class="input is-success" type="text" name="pseudo" placeholder="Choisis ton pseudo">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                    </span>
+                    <span class="icon is-small is-right">
+                        <i class="fas fa-check"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="field">
+                <p class="control has-icons-left">
+                        <input class="input" type="password" name="password" placeholder="Password">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                </p>
+            </div>
+
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="button is-link">Se Connecter</button>
+                </div>
+                <div class="control">
+                    <button class="button is-link is-light">Annuler</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

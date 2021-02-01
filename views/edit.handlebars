@@ -1,0 +1,42 @@
+<section class="section">    
+    <div class="container is-fullhd">    
+        <form action="/jeu/{{jeu.id}}?_method=PUT" method="POST">
+            <div class="field">
+                <label class="label">Nom du jeu :</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Ecris le nom du jeu à ajouter.." name="name" value={{jeu.name}}>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Genre :</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Ecris le genre du jeu.." name="genre" value={{jeu.genre}}>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Descripition :</label>
+                <div class="control">
+                    <textarea class="textarea" placeholder="Décris le jeu.." name="description">{{jeu.description}}</textarea>
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label">Author :</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Ecris ton nom.." name="author" value={{jeu.author}}>
+                </div>
+            </div>
+
+            <div class="field is-grouped">
+                <div class="buttons">
+                    <button class="button is-link" type="submit">Modifier</button>
+                </div>
+                <div class="control">
+                    <button class="button is-link is-light">Annuler</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

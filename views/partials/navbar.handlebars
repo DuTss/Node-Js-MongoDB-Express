@@ -1,0 +1,70 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      <i class="fas fa-dice-d20"></i>
+      <p>BLOCKCHAIN GAMES</p>
+    </a>
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true">Accueil</span>
+      <span aria-hidden="true">Voir les jeux</span>
+      <span aria-hidden="true">A propos de nous</span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" href="/">
+      <i class="fas fa-door-open" style="margin-right: 5px;"></i>
+        Accueil
+      </a>
+      <a class="navbar-item" href="/allgames">
+      <i class="fas fa-gamepad" style="margin-right: 5px;"></i>
+        Voir les jeux
+      </a>
+      <a class="navbar-item" href="/aboutus">
+      <i class="fas fa-user-friends" style="margin-right: 5px;"></i>
+        A propos de nous
+      </a>
+
+      <a class="navbar-item" href="/contact">
+      <i class="fas fa-phone-volume" style="margin-right: 5px;"></i>
+        Contact
+      </a>
+    </div>
+
+    
+    {{#if user}}
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-link" href="/ajouter">
+          <i class="far fa-plus-square" style="margin-right: 5px;"></i>
+            <strong>Ajouter un jeu</strong>
+          </a>
+        </div>
+      </div>
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-danger" href="/user/logout">
+          <i class="fas fa-sign-out-alt" style="margin-right: 5px;"></i>
+            <strong>Se Déconnecter</strong>
+          </a>
+        </div>
+      </div>
+      {{else}}
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-link" href="/user/register">
+          <i class="fas fa-clipboard-list" style="margin-right: 5px;"></i>
+            <strong>S'inscrire</strong>
+          </a>
+          <a class="button is-light" href="/user/login">
+          <i class="fas fa-sign-in-alt" style="margin-right: 5px;"></i>
+            Se connecter
+          </a>
+        </div>
+      </div>
+    </div>
+    {{/if}}    
+  </div>
+</nav>

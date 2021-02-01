@@ -1,0 +1,56 @@
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Blockchain Games</h1>
+      <p class="is-size-5">
+        Vous n’avez pas nécessairement besoin de dépenser des milliers de dollars pour une plate-forme minière coûteuse si vous souhaitez gagner de la crypto-monnaie.
+        Si vous souhaitez économiser de l'argent et vous amuser pendant que vous y êtes, pourquoi ne pas commencer à jouer à l'un de ces jeux? Ils vous permettront de gagner de la crypto-monnaie en participant.
+      </p>
+    </div>
+  </section>
+
+  <section class="section intro">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div class="content intro-text">
+            <h1 class="title">Les avantages des jeux blockchain..</h1>
+            <p class="avantage">
+              Reconsidérons les caractéristiques essentielles des actifs sur blockchain: <br>
+              <ul>
+                <li>Je possède mes actifs car je suis seul propriétaire des clés qui les contrôlent.</li>
+                <li>J’ai une visibilité totale du nombre d’actifs en circulation ainsi que de leurs mouvements.</li>
+                <li>Mes actifs ne peuvent pas être confisqués et disparaître du jour au lendemain.</li>
+                <li>Je peux échanger mes actifs à ma guise, à travers le monde, 24 heures sur 24 et 7 jours sur 7.</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <div class="intro"><img src="https://blog.nash.io/content/images/size/w2000/2020/05/The-two-major-uses-for-blockchain-in-video-games.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <section class="section">
+        <div class="container">
+          <h2 class="title">PLAY TO EARN</h2>
+            <div class="tile is-ancestor">
+              {{#each posts}}
+                  <div class="tile is-parent">
+                    <article class="tile is-child notification">
+                      <a href="/jeu/{{_id}}"><p class="title-article">{{name}}</p></a>
+                      <p class="subtitle">{{genre}}</p>
+                      <p class="description">{{description}}</p>
+                      <figure class="image is-4by3">
+                        <img src="{{image}}" alt="">
+                      </figure>
+                      <p>Publié par {{author}}, le {{moment format="DD-MM-YY"}}</p>
+                    </article>
+                  </div>
+              {{/each}}
+          </div>
+        </div>    
+      </section>
