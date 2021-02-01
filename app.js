@@ -27,7 +27,8 @@ const postJeuController = require('./controllers/postJeu');
 const editController = require('./controllers/edit');
 const saveEditController = require('./controllers/saveEdit');
 const allGamesController = require('./controllers/allGames');
-const aboutUsController = require('./controllers/aboutUs')
+const avantageController = require('./controllers/avantage');
+const aboutUsController = require('./controllers/aboutUs');
 
 const userRegisterController = require('./controllers/userRegister');
 const userCreateController = require('./controllers/userCreate');
@@ -35,18 +36,6 @@ const userLoginController = require('./controllers/userLogin');
 const loginPostController = require('./controllers/loginPost');
 const userLogoutController = require('./controllers/userLogout');
 
-// MULTER 
-/*const multer  = require('multer')
-const storage = multer.diskStorage({
-    destination: function (req, file, cb) {
-      cb(null, './public/imageReceived')
-    },
-    filename: function (req, file, cb) {
-      cb(null, file.fieldname + '-' + Date.now())
-    }
-  })
-
-  const upload = multer({ storage: storage })*/
 
 //EXPRESS + MONGOOSE
 const app = express()
@@ -87,10 +76,10 @@ const fileSend = require('./middleware/fileSend')
 app.use('/jeux/post', fileSend)
 const auth = require('./middleware/auth')
 app.use('/ajouter', auth)
-const redirectAuthSuccess = require('./middleware/redirectAuthSuccess')
+const redirectAuthSuccess = require('./middleware/redirectAuthSuccess');
+const Jeu = require('./database/models/Jeu');
 app.use('*', (req,res,next) => {
     res.locals.user = req.session.userId
-    console.log(res.locals.user)
     next()
 })
 
@@ -108,6 +97,8 @@ app.get('/user/login', redirectAuthSuccess, userLoginController)
 app.get('/edit/:id', auth, editController)
 // PAGE TOUS LES JEUX 
 app.get('/allgames', allGamesController)
+// PAGE AVANTAGE
+app.get('/avantage', avantageController)
 // PAGE ABOUT US
 app.get('/aboutus', aboutUsController)
 // SE DECONNECTER
@@ -121,7 +112,7 @@ app.post('/user/create', redirectAuthSuccess, userCreateController)
 app.post('/jeux/post', auth, fileSend, postJeuController)
 // ENREGISTRER MODIFICATION
 app.put('/jeu/:id', auth, saveEditController)
-
+ 
 
 // PAGE CONTACT
 app.get('/contact', function(req,res) {
